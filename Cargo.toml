@@ -1,0 +1,12 @@
+[package]
+name = "stellar-meta"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.0", features = ["derive"] }
+stellar-xdr = { version = "22.0", features = ["serde"] }
+serde_json = "1.0"
+tempfile = "3.20"
+colored = "3.0"
+hex = "0.4.3"
