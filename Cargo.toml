@@ -1,0 +1,17 @@
+[package]
+name = "stellar-contracts-wasms"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "stellar-core-xdr-processor"
+path = "src/main.rs"
+
+[dependencies]
+stellar-xdr = "21"
+serde_json = "1.0"
+tokio = { version = "1.0", features = ["full"] }
+anyhow = "1.0"
+clap = { version = "4.0", features = ["derive"] }
+base64 = "0.21"
+chrono = { version = "0.4", features = ["serde"] }
